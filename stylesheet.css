@@ -263,6 +263,10 @@ header i {
   padding: 20px;
 }
 
+.access a {
+  color: gray;
+}
+
 .access > .station {
   padding-top: 20px;
 }
