@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+
+/* 全体構造 */
+
+* {
+  position: static;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color:black;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 28px;
+  background: skyblue;
+  color: white;
+  margin: 20px;
+}
+
+h3 {
+  color: rgb(63, 62, 62);
+  font-size: 18px;
+}
+
+p, a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+}
+
+p {
+  font-size: 17px;
+  color: dimgray;
+}
+
+span {
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  padding: 30px 50px;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inner h2 {
+  line-height: 1.5;
+}
+
+/* ヘッダー */
+header {
+  background-color: rgb(107, 182, 252);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 150px;
+}
+
+header > .inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header i {
+  padding: 0 7px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#menu-btn-wrapper {
+  position: relative;
+  display: none;
+}
+
+.menu-btn {
+  position: absolute;
+  top:0px;
+  right:20px;
+  font-size: 20px;
+  line-height: 40px;
+  display: none;
+}
+
+.menu-btn-list {
+  font-size: 20px;
+  line-height: 1.6;
+  background:#abd7f5;
+  height: 170px;
+  width: 100%;
+  position: absolute;
+  top:0px;
+  z-index: 11;
+}
+
+/* コンセプト */
+.concept h2 {
+  margin-top: 180px;
+  padding-top: -180px;
+}
+
+.detail-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  padding: 20px;
+  color: dimgray;
+}
+
+.detail-images img {
+  width: 91%;
+  height: 300px;
+}
+
+.detail-images {
+  position: relative;
+  opacity: 0.9;
+}
+
+.detail-images p {
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.detail-sentence {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.detail-sentence p {
+  margin-top: 15px;
+}
+
+/* スウェーデンの事例 */
+.examples {
+  display: flex;
+  justify-content: center;
+}
+
+.example {
+  padding: 20px;
+  width: 50%;
+}
+
+.example p {
+  width: 95%;
+  margin: 10px auto
+}
+
+#example1 {
+  position: relative;
+}
+
+#example1 > h3 {
+  position: absolute;
+  top: 21px;
+  left: 38px;
+  background-color: white;
+  opacity: 0.8;
+  color: dimgray;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.example img {
+  opacity: 0.9;
+  width: 95%;
+  padding: 0 0px 30px 10px;
+}
+
+#example2 > h4 {
+  font-size: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+/* トラブル */
+
+.trable > .examples {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trable h3 {
+  padding: 20px;
+  font-size: 22px;
+}
+
+/* コンタクト */
+.contact-wrapper {
+  background-color: rgba(241, 239, 239, 0.959);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.contact > div {
+  padding: 20px;
+}
+
+.access > .station {
+  padding-top: 20px;
+}
+
+.contact  h4 {
+  padding: 5px 0px;
+}
+
+.map {
+  padding: 20px;
+}
+
+/* フッター */
+footer {
+  background-color: rgb(107, 182, 252);
+  text-align: center;
+}
+
+
+
+
+/* プロフィール */
+.profiele h2 {
+  margin-top: 180px;
+  padding-top: -180px;
+}
+
+.doctor-profiele-wrapper {
+  display: flex;
+}
+.doctor-profiele {
+  width: 40%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+.doctor-profiele p {
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.doctor-profiele img {
+  padding: 10px;
+  width: 90%;
+}
+
+/* 経歴 */
+.history-table, .society-table {
+    width: 400px;
+    margin: 50px auto;
+}
+.history-table * ,.society-table *{
+  border-bottom: 1px dashed black;
+  padding: 10px;
+}
+
+
+
+
+/* 診療科目 */
+.subject h2 {
+  margin-top: 180px;
+  padding-top: -180px;
+}
+
+.subject img {
+  width: 400px;
+  height: 300px;
+}
+
+.medical {
+  text-align: left;
+}
+.subject h3 {
+  font-size: 20px;
+  margin:30px 0 20px 0;
+  border-bottom: 2px solid silver;
+  width: 120px;
+  text-align: center;
+}
+
+.subject h4 {
+  font-size: 18px;
+  padding: 5px;
+}
+
+/* 診療時間 */
+.time h2 {
+  margin-top: 180px;
+  padding-top: -180px;
+}
+
+.time-table {
+  background-color: #ecebeb;
+  border-collapse: collapse;
+  width: 400px;
+  margin: 50px auto;
+}
+
+.time-table * {
+  border: 1px solid rgb(65, 64, 64);
+}
+
+.tel {
+  font-size: 20px;
+  color: rgb(56, 55, 55);
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* よくある質問 */
+.question h2 {
+  margin-top: 180px;
+  padding-top: -180px;
+}
+
+.question img {
+  width: 400px;
+  height: 300px;
+}
+
+.qa {
+  text-align: center;
+  margin: 0 20px;
+  width: 95%;
+}
+
+.qa h5 {
+  font-size: 17px;
+  font-weight: normal;
+  background: rgb(210, 229, 230);
+  padding: 20px;
+  margin: 35px 0 15px 0;
+}
+

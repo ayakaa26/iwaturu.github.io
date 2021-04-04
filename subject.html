@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>いわつる歯科医院練習</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+<!-- ヘッダー -->
+<header>
+  <div class="inner">
+    <div class="header-title">
+      <!-- <img src="images/hamigaki.jpg"> -->
+      <a href="index.html"><h1>いわつる歯科医院<i class="fas fa-tooth"></i></h1></a>
+      <a href="#" class="menu-btn"><span class="fas fa-bars"></span></a>
+    </div> 
+    <ul class="header-list">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="staff.html">院長紹介</a></li>
+      <li><a href="subject.html">診療科目</a></li>
+      <li><a href="time.html">診療時間</a></li>
+      <li><a href="question.html">よくある質問</a></li>
+    </ul>
+  </div>  
+</header>
+
+<div id="menu-btn-wrapper">
+  <nav class="menu-btn-list">
+    <ul>
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="staff.html">院長紹介</a></li>
+      <li><a href="subject.html">診療科目</a></li>
+      <li><a href="time.html">診察時間</a></li>
+      <li><a href="question.html">よくある質問</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- 診療科目 -->
+<div class="subject">
+  <div class="inner">
+    <h2>診療科目</h2>
+      <img src="images/dental9.jpg">
+      <div class="medical">
+          <h3>一般歯科</h3>
+            <h4>歯周病歯科</h4>
+              <p>非外科的治療を中心としたスウェーデンスタイルの治療をしています。</p>
+            <h4>予防歯科</h4>
+              <p>定期検診によって虫歯の発症を最小限におさえます。</p>
+            <h4>虫歯処置</h4>
+              <p>早期発見・早期治療により最小限の治療を行います。</p>
+            <h4>補綴処置</h4>
+              <p>インレー、クラウン、ブリッジ義歯などを治療します。</p>
+            <h4>入れ歯治療</h4>
+              <p>部分入れ歯や総義歯を作ります。</p>
+            <h4>入れ歯修理</h4>
+              <p>歯が抜けたり割れたりした入れ歯を即日治療します。</p>
+      </div>
+      <div class="medical">
+        <h3>口腔外科</h3>
+          <h4>抜歯</h4>
+            <p>親知らずや保存不可能な歯を抜きます。</p>
+          <h4>顎関節治療</h4>
+            <p>開口障害、顎関節症の症状の場合、スプリント治療を行います。</p>
+      </div>      
+      <div class="medical">
+        <h3>小児歯科</h3>
+          <h4>ブラッシング</h4>
+            <p>衛生士が各々の患者さんに適した歯みがきのしかたを丁寧に指導します。</p>
+          <h4>フッ素塗布</h4>
+            <p>予防を前提にトレイ法やイオン導入法を行います。</p>
+          <h4>予防処置</h4>
+            <p>生えたての永久歯などにシーラント処置を行います。</p>
+          <h4>食事指導</h4>
+            <p>正しいおやつの取り方、食後の歯みがき指導などを行います。</p>
+          <h4>矯正相談</h4>
+            <p>レントゲン撮影や模型より矯正の相談をし専門医をご紹介します。</p>
+      </div>      
+  </div>
+</div>
+
+<!-- フッター -->
+<footer>
+  <a href="index.html"><span class="fas fa-home"></span>HOME</a>
+  <p><small>© Copyright 2021 いわつる歯科医院 All rights reserved.</small></p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('.menu-btn').click(function(){
+        $('#menu-btn-wrapper').toggle(100);
+      });
+    });
+  </script>
+</body>
+</html>
