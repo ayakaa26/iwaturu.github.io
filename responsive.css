@@ -153,6 +153,11 @@
   line-height: 1.6;
 }
 
+.access a {
+  color: gray;
+  font-size: 15px;
+}
+
 /* フッター */
 footer {
   background-color: rgb(107, 182, 252);
